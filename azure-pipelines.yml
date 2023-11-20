@@ -10,7 +10,6 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- 
 - task: TerraformInstaller@1
   inputs:
     terraformVersion: 'latest'
@@ -20,7 +19,7 @@ steps:
     script: |
       # Write your commands here
       
-      terraform init
+      terraform init -backend-config="./backend.tfvars"
       terraform plan
       terraform apply --auto-approve
 

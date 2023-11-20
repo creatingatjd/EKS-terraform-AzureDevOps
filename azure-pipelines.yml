@@ -22,4 +22,5 @@ steps:
       terraform init -backend-config="./backend.tfvars"
       terraform plan
       terraform apply --auto-approve
+    workingDirectory: '$(Build.SourcesDirectory)/EKS_Cluster_using_Terraform-main'
 

@@ -22,7 +22,7 @@ steps:
       terraform init -backend-config="./backend.tfvars" -backend-config="access_key=AKIA2KIPWTT5JNBHVNXO" -backend-config="secret_key=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"
       terraform plan
       terraform apply --auto-approve
-      terraform delete --auto-approve
+      terraform destroy --auto-approve
 
     workingDirectory: '$(Build.SourcesDirectory)/EKS_Cluster_using_Terraform-main'
 

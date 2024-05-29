@@ -6,6 +6,14 @@
 trigger:
 - none
 
+schedules:
+- cron: "* 23 * * 1-5"
+  displayName: Weekday Build
+  branches:
+    include:
+    - main
+  always: true
+
 pool:
   vmImage: ubuntu-latest
 

@@ -1,3 +1,3 @@
 bucket         = "testbucketsiri"
 key            = "terraform-dev/terraform.tfstate"
-region         = "eu-west-2"
+region         = "us-east-1"
